@@ -5,13 +5,17 @@ public class ReverseString {
         
         //method1--traditional for loop to iterate through the characters of the string. It uses the charAt method to access each character at the specified index.
         
+        String rev = "";
         for(int i=name.length()-1; i>=0; i--){
-            System.out.println(name.charAt(i));
+            //System.out.println(name.charAt(i));
+            rev =  rev + name.charAt(i);
         }
+        System.out.println(rev);
         
         System.out.println("-----------------------");
         //for each is a enhanced for loop for print all chnarcters in an array
 
+        
         System.out.println(name.toCharArray());
 
         //method2 - foreach
