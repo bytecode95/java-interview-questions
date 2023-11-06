@@ -11,6 +11,8 @@ public class ReverseString2 {
     }
 
     public static String reverseString(String str){
+        if (str == null)
+			throw new IllegalArgumentException("Null is not valid input");
         String rev = "";
         for(int i=str.length()-1; i>=0; i--){
             rev = rev + str.charAt(i);
